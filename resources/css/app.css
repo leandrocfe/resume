@@ -1,0 +1,83 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap");
+
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
+/* main */
+.main-container {
+    @apply ml-auto mr-auto p-10 max-w-screen-xl;
+}
+
+/* avatar */
+.avatar {
+    @apply absolute h-20 rounded -top-10 border-2 bg-gray-50 border-white shadow;
+}
+
+/* badge */
+.badge {
+    @apply absolute top-3 right-7 text-white rounded-xl px-2 text-sm;
+}
+
+/* title */
+.title {
+    @apply text-lg mb-1.5 font-semibold text-gray-600;
+}
+
+/* subtitle */
+.subtitle {
+    @apply font-medium text-right text-gray-600;
+}
+/* social midia */
+.social-midia {
+    @apply flex flex-row justify-between;
+}
+
+/* card */
+.card {
+    @apply p-7 bg-white shadow rounded-xl overflow-hidden flow-root;
+}
+
+/* tag */
+.tag {
+    @apply rounded-md text-sm h-7 px-2 py-1 m-1;
+}
+
+/* content block */
+.content-block {
+    @apply card;
+}
+
+/* content block item */
+.content-block .block-item {
+    @apply grid lg:grid-cols-4 md:grid-cols-4 grid-cols-1;
+}
+
+/* company logo */
+.content-block .block-item .company-logo {
+    @apply rounded-xl flex flex-shrink-0 items-center justify-center h-14 w-14;
+}
+
+/* block right side */
+.content-block .block-item .block-item-right {
+    @apply flex lg:flex-wrap md:flex-wrap lg:justify-end md:justify-end justify-between py-4 lg:py-0 md:py-0;
+}
+
+/* block badge */
+.content-block .block-item .block-item-right .item-right-badge {
+    @apply rounded-xl px-2 text-sm;
+}
+
+/* item info */
+.item-info {
+    @apply flex justify-between text-gray-400 text-sm leading-none py-1;
+}
+
+/* divider */
+.divider {
+    @apply border-b border-gray-200 my-2 pt-4;
+}
